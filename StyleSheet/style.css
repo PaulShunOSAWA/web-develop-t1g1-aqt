@@ -2,3 +2,71 @@
 {
     color: black
 }]
+
+
+/* Make navigation bar responsive */
+.grid-container-index {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-areas:
+    'header header header header header';
+  background-color: white;
+}
+
+
+/*Header*/
+header
+{ grid-area: header; }
+
+header
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background:rgba(255);
+    border-radius: 10px;;
+    border: 5px solid white;
+    text-align: left;
+    width:100%;
+    height:150px;
+    padding: 4px;    
+}
+
+/*Navigation bar*/
+
+nav
+{ grid-area: nav; }
+
+nav
+{
+    background: white;
+    border-radius: 9px;
+    text-align:center;
+    width:100%;    
+}
+
+nav ol
+{
+    border:1px solid lightgrey;
+    /* left is upper and bottom margin, right is left and right margin*/
+    border-width:5px 0px;
+    /* left margin*/
+    padding:0;
+    text-align:left;
+}
+
+nav li
+{
+    font-family: Arial, Helvetica, sans-serif;
+    display:inline;
+    border-radius: 5px;;
+    padding:5px;
+}
+
+nav li a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: grey;
+    display:inline-block;
+    padding:6px;
+}
