@@ -1,75 +1,80 @@
-[class="trans"
-{
-    color: black
-}]
+/* Control the structure of the each page such that mainPage(index.html), page1, and page2 */
 
-
-/* Devide index by three */
-.grid-container-index
+.mainPage
 {
     display: grid;
-    grid-template-columns: 100px auto 100px;
+    margin: 0px;
+
+    grid-template-rows: 80px 80px auto auto auto 300px;
+    grid-template-columns: auto auto auto;
     grid-template-areas:
-        'header header header'
-        'mainLeft main mainRight'
-        'footer footer footer';
-  background-color: white;
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "left middle right"
+        "ad ad ad"
+        "footer footer footer";
+}
+body > * {
+    margin: 3px;
+    padding: 20px;
 }
 
-/* Define grid-area */
-header
+.page2
 {
-    grid-area: header;
+    display: grid;
+    margin: 0px;
+
+    grid-template-rows: 80px 80px auto auto auto auto 300px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "main main main"
+        "main main main"
+        "left middle right"
+        "footer footer footer";
 }
-main
-{
-    grid-area: main;
-    background: #afa;
-}
-#mainLeft
-{
-    grid-area: mainLeft;
-    background: #faf;
-}
-#mainRight
-{
-    grid-area: mainRight;
-    background: #888;
-}
-footer
-{ 
-    grid-area: footer; 
+body > * {
+    margin: 3px;
+    padding: 20px;
 }
 
+/* end structure----------------------------------------------------------------------------------------------- */
 
+/* Header and navigation bar are in common all pages*/
 /* Header */
 header
 {
+    grid-area: header;
     font-family: Arial, Helvetica, sans-serif;
     background: white;
-    border-radius: 10px;;
-    border: 5px solid white;
+
     text-align: left;
-    width:100%;
-    height:150px;
-    padding: 4px;
     /* Pin the header to the upper bound */
     position: fixed;
-    top: 0;
-    left: 0;
+    width: 100%;
+    top: 0px;
+    left: 0px;
     /* Prevent overlaping*/
     z-index:10;
 }
-
 /* Navigation bar */
 nav
 {
+    grid-area: nav;
     background: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align:center;
-    width:100%;    
+    width:100%;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    left: 0px;
+    /* Prevent overlaping*/
+    z-index:10;
 }
-
 nav ol
 {
     border:1px solid lightgrey;
@@ -79,7 +84,6 @@ nav ol
     padding:0;
     text-align:left;
 }
-
 nav li
 {
     
@@ -87,7 +91,6 @@ nav li
     border-radius: 5px;;
     padding:5px;
 }
-
 nav li a
 {
     text-decoration: none;
@@ -97,14 +100,49 @@ nav li a
     padding:6px;
 }
 
+/* end header and navigation bar----------------------------------------------------------------------------------------------- */
+
+/* index structure */
+main
+{
+    grid-area: main;
+    background: #afa;
+}
+left
+{
+    grid-area: left;
+    background: #aaf;
+    text-align: center;
+}
+middle
+{
+    grid-area: middle;
+    background: #aaf;
+    text-align: center;
+}
+right
+{
+    grid-area: right;
+    background: #faf;
+    text-align: center;
+}
+#ad
+{
+    grid-area: ad;
+    background: white;
+    text-align: center;
+}
+
+/* end index structure----------------------------------------------------------------------------------------------- */
+
 /* footer */
 #contact
 {
     font-size: 0.6em;
 }
-
 footer
 {
+    grid-area: footer;
     background: grey;
     width:100%;  
     display:inline-block;
@@ -120,3 +158,4 @@ footer ul
     color: white;
     padding:10px;
 }
+/* end footer----------------------------------------------------------------------------------------------- */
