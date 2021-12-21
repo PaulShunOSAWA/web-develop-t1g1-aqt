@@ -10,40 +10,36 @@
     grid-template-areas:
         "header header header"
         "nav nav nav"
-        "main main main"
-        "left middle right"
-        "ad ad ad"
+        "mainAd mainAd mainAd"
+        "leftCard middleCard rightCard"
+        "faq faq faq"
         "footer footer footer";
 }
-body > * {
-    margin: 3px;
-    padding: 20px;
-}
 
-.page2
+.ticketPage
 {
     display: grid;
     margin: 0px;
 
-    grid-template-rows: 80px 80px auto auto auto auto 300px;
+    grid-template-rows: 80px 80px auto auto 300px;
     grid-template-columns: auto auto auto;
     grid-template-areas:
         "header header header"
         "nav nav nav"
-        "main main main"
-        "main main main"
-        "main main main"
-        "left middle right"
+        "mainAd mainAd mainAd"
+        "leftCard middleCard rightCard"
         "footer footer footer";
 }
-body > * {
+body > *
+{
     margin: 3px;
     padding: 20px;
 }
 
-/* end structure----------------------------------------------------------------------------------------------- */
+/* end the structure----------------------------------------------------------------------------------------------- */
 
-/* Header and navigation bar are in common all pages*/
+/* Header, navigation bar, and footer are in common all pages*/
+
 /* Header */
 header
 {
@@ -60,6 +56,7 @@ header
     /* Prevent overlaping*/
     z-index:10;
 }
+
 /* Navigation bar */
 nav
 {
@@ -100,41 +97,6 @@ nav li a
     padding:6px;
 }
 
-/* end header and navigation bar----------------------------------------------------------------------------------------------- */
-
-/* index structure */
-main
-{
-    grid-area: main;
-    background: #afa;
-}
-left
-{
-    grid-area: left;
-    background: #aaf;
-    text-align: center;
-}
-middle
-{
-    grid-area: middle;
-    background: #aaf;
-    text-align: center;
-}
-right
-{
-    grid-area: right;
-    background: #faf;
-    text-align: center;
-}
-#ad
-{
-    grid-area: ad;
-    background: white;
-    text-align: center;
-}
-
-/* end index structure----------------------------------------------------------------------------------------------- */
-
 /* footer */
 #contact
 {
@@ -148,7 +110,6 @@ footer
     display:inline-block;
     padding:40px;
 }
-
 footer ul
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -158,4 +119,52 @@ footer ul
     color: white;
     padding:10px;
 }
-/* end footer----------------------------------------------------------------------------------------------- */
+
+/* end Header, navigation bar, and footer------------------------------------------------------------------------------------------ */
+
+/* index page structure */
+#mainAd
+{
+    grid-area: mainAd;
+    background: #afa;
+}
+#leftCard
+{
+    grid-area: leftCard;
+    background: #aaf;
+    text-align: center;
+}
+#middleCard
+{
+    grid-area: middleCard;
+    background: #aaf;
+    text-align: center;
+}
+#rightCard
+{
+    grid-area: rightCard;
+    background: #faf;
+    text-align: center;
+}
+#faq
+{
+    grid-area: faq;
+    background: white;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+/* end index structure----------------------------------------------------------------------------------------------- */
+.ticketButton
+{
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
