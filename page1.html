@@ -16,10 +16,107 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
+
+<body class = "mainPage">
     
-<body>
-<footer>
-    <h2>Footer</h2>
-</footer>
+    <header>
+            Logo
+    </header>
+    
+    <nav>
+        <ol>
+        <li><a href="index.html">Top Page</a></li>
+        <li><a href="page1.html">page 1</a></li>
+        <li><a class="ticketButton" href="ticket.html">Ticket</a></li>
+        </ol>
+    </nav>
+
+    <!-- Sub-page 1: Things to do -->
+    <main id='main-content'>
+        <!-- Main Headlines -->
+        <h1>Headline</h1>
+        <P>Description</P>
+        <!-- Carousel Media -->
+        <div class='carousel-container'>
+            <section class=”carousel-media”>
+                <!-- Repeat semantic below for next media item -->
+                <article class=”media-1”>
+                    <figure>
+                        <img src="img/disneyland_hotel.jpg" alt=''>
+                    </figure>
+                </article>
+            <!-- End of Carousel Media-->
+            </section>
+        </div>
+        
+        <!-- start cat 1-->
+        <article class="rides-attractions">
+            <h2>Rides & Attractions </h2>
+            <p>description</p>
+            <!-- repeat semantic below for next ride/attraction -->
+            <section class="ferris-wheel">
+                <div class='grid-container'>
+                    <div class='item-title'>
+                        <h3>The Ferris Wheel</h3>
+                    </div>
+                    <div class='item-desc'>
+                        <p> description </p>
+                    </div>
+                    <div class='item-img'>
+                        <figure>
+                            <img src="img/ferris-wheel.jpg" style="max-width:300px;" alt=''>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        <!-- end of cat 1-->
+        </article>
+
+        <!-- start cat 2-->
+        <article class=”events-and-shows”> 
+            <h2>Events & Shows</h2>
+            <p>description</p>
+            <!-- repeat semantic below for next events/shows -->
+            <section class="holiday-season">
+                <div class='grid-container'>
+                    <div class='item-title'>
+                        <h3>Joy of holiday season</h3>
+                    </div>
+                    <div class='item-desc'>
+                        <p>description</p>
+                    </div>
+                    <div class='item-img'>
+                        <figure>
+                            <img src="img/holiday.jpeg" style="max-width:300px;" alt=''>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        <!-- end of cat 2-->
+        </article>
+
+        <!-- start cat 3-->
+        <article class="dining">
+            <h2>Dining</h2>
+            <p>description</p>
+            <!-- repeat semantic below for next restaurant -->
+            <section class="three-broomsticks-restuarant">
+                <div class='grid-container'>
+                    <div class='item-title'>
+                        <h3>Three Broomsticks restaurant</h3>
+                    </div>
+                    <div class='item-desc'>
+                        <p>description</p>
+                    </div>
+                    <div class='item-img'>
+                        <figure>
+                            <img src="img/broomstick-rest.jpg" style="max-width:300px;" alt=''>
+                        </figure>
+                    </div> 
+                </div>
+            </section>
+        <!-- end of cat 3-->
+        </article>
+
+    </main>
 </body>
-</html>
