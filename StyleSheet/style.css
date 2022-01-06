@@ -5,35 +5,20 @@
     display: grid;
     margin: 0px;
 
-    grid-template-rows: 80px 80px auto auto auto 300px;
+    grid-template-rows: 80px auto auto auto auto auto 300px;
     grid-template-columns: auto auto auto;
     grid-template-areas:
         "header header header"
         "nav nav nav"
         "mainAd mainAd mainAd"
+        "review review review"
         "leftCard middleCard rightCard"
         "faq faq faq"
         "footer footer footer";
 }
-/*
-.ticketPage
-{
-    display: grid;
-    margin: 0px;
 
-    grid-template-rows: 80px 80px auto auto 300px;
-    grid-template-columns: auto auto auto;
-    grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "mainAd mainAd mainAd"
-        "leftCard middleCard rightCard"
-        "footer footer footer";
-}
-*/
 body > *
 {
-    margin: 3px;
     padding: 20px;
 }
 
@@ -93,7 +78,8 @@ nav li a
 {
     text-decoration: none;
     font-size: 1.2em;
-    color: grey;
+    color:     color: #4a556c;
+;
     display:inline-block;
     padding:6px;
 }
@@ -113,7 +99,7 @@ footer
 }
 footer ul
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Times New Roman, georgia, serif;
     text-decoration: none;
     list-style-type: none;
     font-size: 1.8em;
@@ -127,34 +113,105 @@ footer ul
 #mainAd
 {
     grid-area: mainAd;
-    background: #afa;
+    background: #fff;
+    margin-bottom: 100px;
+    
+}
+#review
+{
+    font-family: Times New Roman, georgia, serif;
+    grid-area: review;
+    background-color: white;
+    text-align: center;
+    padding: 100px 5px 70px;
 }
 #leftCard
 {
+    font-family: Times New Roman, georgia, serif;
     grid-area: leftCard;
-    background: #aaf;
+    background-color: #a6a064;
     text-align: center;
+    padding: 100px 5px 70px;
 }
 #middleCard
 {
+    font-family: Times New Roman, georgia, serif;
     grid-area: middleCard;
-    background: #aaf;
+    background-color: #a6a064;
     text-align: center;
+    padding: 100px 5px 70px;
 }
 #rightCard
 {
+    font-family: Times New Roman, georgia, serif;
     grid-area: rightCard;
-    background: #faf;
+    background-color: #a6a064;
     text-align: center;
+        padding: 100px 5px 70px;
 }
 #faq
 {
+    font-family: Times New Roman, georgia, serif;
     grid-area: faq;
+    margin-top: 25px;
     background: white;
     color: grey;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
 }
+.indexHeading
+{
+    color: #fff;
+    text-align: center;
+    font-family: Times New Roman, georgia, serif;
+}
+
+.reviewHeding
+{
+    align-items: center;
+    font-family: Times New Roman, georgia, serif;
+    margin-bottom: 24px;
+    color: dimgrey;
+    font-size: 18px;
+    line-height: 40px;
+}
+.reviewComment
+{
+    align-items: left;
+    font-family: Times New Roman, georgia, serif;
+    margin-bottom: 12px;
+    color: dimgrey;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0px 500px 0px;
+}
+.cardHeding
+{
+    font-family: Times New Roman, georgia, serif;
+    margin-bottom: 12px;
+    color: floralwhite;
+    font-size: 18px;
+    line-height: 40px;
+}
+.cardText
+{
+    font-family: Times New Roman, georgia, serif;
+    margin-bottom: 12px;
+    color: floralwhite;
+    font-size: 18px;
+    line-height: 40px;
+}
+.section_index_hero
+{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/disneyland_hotel.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/disneyland_hotel.jpg');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+}
+
 /* end index structure----------------------------------------------------------------------------------------------- */
 .ticketButton
 {
