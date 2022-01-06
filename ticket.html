@@ -3,7 +3,7 @@
     
 <!--
 Dec 30, 2021: 
-Api added logo in header.
+Api added logo in header.-The logo image was not displayed properly, so Shun fixed it.
 Api adjusted Buy Now button using <button><br><br>, instead of <a>.
 Api adjusted words in <p> instead of just using sample words.
 Api added meaning for alt="" in <img>.
@@ -25,13 +25,14 @@ Api commented out line 43 - 61.
 <body class="ticketPage">
 
     <header>
-        <img src="img/theme-park-logo.png" alt="Theme Park logo image" width="100" height="100">
+        <a href="index.html">
+            <img src="img/theme-park-logo.png" alt="Theme Park logo image" width="236" height="136">
+        </a>    
     </header>
 
     <nav>
         <ol>
-            <li><a href="index.html">Top Page</a></li>
-            <li><a href="page1.html">page 1</a></li>
+            <li><a href="page1.html">Things to Do</a></li>
             <li><a class="ticketButton" href="ticket.html">Ticket</a></li>
         </ol>
     </nav>
