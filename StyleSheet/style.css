@@ -113,8 +113,7 @@ footer ul
 {
     grid-area: mainAd;
     background: #fff;
-    margin-bottom: 100px;
-    
+    margin-top: 80px;
 }
 #review
 {
@@ -122,7 +121,7 @@ footer ul
     grid-area: review;
     background-color: white;
     text-align: left;
-    padding: 100px 5px 70px;
+    padding: 10px 1px 10px;
 }
 #leftCard
 {
