@@ -474,9 +474,6 @@ footer ul
   position:relative;  
   }
 
-  body, html {
-    height: 100%;
-    }
   /* Hero image */
   .hero-image {
     margin-top: 100px;
@@ -505,6 +502,7 @@ footer ul
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
+    border-radius: 15px;
     font-size: 16px;
   }
 
@@ -555,7 +553,7 @@ footer ul
         'sectionhead'
         'sectiondesc';
         margin: 5% 5%;
-        padding: 5% 5%;
+        padding: 0% 2%;
         background-color: white;
     }
     .section-head-container {
@@ -576,6 +574,10 @@ footer ul
       max-width:100vw;
       max-height:100vh;
     }
+    .footer {
+      position:relative;
+      bottom:0;
+    }
   }
 
   @media screen and (min-width: 767px) {
@@ -584,7 +586,7 @@ footer ul
     grid-template-areas:
     "sectionhead sectiondesc sectiondesc"
     "sectionhead sectiondesc sectiondesc";
-    margin: 5% 10%;
+    margin: 3.5% 10%;
     }
     .section-head-container {
       text-align: left;
@@ -604,7 +606,4 @@ footer ul
       max-width:100vw;
       max-height:100vh;
     }
-  }
-
-  @media screen and (min-width: 991px) {
   }
