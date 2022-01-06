@@ -9,7 +9,7 @@ TO DO
 ・Shun is to code all three pages, CSS,  roughly--DONE
 ・Shun is to give a grid structure and put a header and a footer on all three pages--DONE
 ・Shun is to code the whole index.html__DONE
-・Louis is to code the whole page1.html
+・Louis is to code the whole page1.html__DONE
 ・Ahalid is to code the whole ticket.html__DONE
 ・Api edits ticket.html__DONE Dec 30, 2021
 ・Api updates html wireframe for ticket page__DONE Dec 30, 2021
@@ -35,15 +35,17 @@ TO DO
 </head>
 
 <body class = "mainPage">
-    <header>
-            Logo
-    </header>
     
+    <header>
+        <a href="index.html">
+            <img src="img/theme-park-logo.png" alt="Theme Park logo image" width="236" height="136">
+        </a>    
+    </header>
+
     <nav>
         <ol>
-        <li><a href="index.html">Top Page</a></li>
-        <li><a href="page1.html">page 1</a></li>
-        <li><a class="ticketButton" href="ticket.html">Ticket</a></li>
+            <li><a href="page1.html">Things to Do</a></li>
+            <li><a class="ticketButton" href="ticket.html">Ticket</a></li>
         </ol>
     </nav>
     
@@ -56,20 +58,26 @@ TO DO
         </div>
     </div>
     <div id = "review" class = "reviewComment">
-        <dl>
-            <dt>
-                <h1 class = "reviewHeding">Guest Review</h1>
-            </dt>
-                <dd >
-                    Name: testfdsafdsafdsafdsafds
-                </dd>
-                <dd>
-                    Comment: testfdsafdsafdsafdsa
-                </dd>
-                <dd>
-                    Review: testfdsafdsafdsafdsafd
-                </dd>
-        </dl>
+        <div class="section">
+            <div class="container w-container">
+                <div class="w-layout-grid grid">
+                    <div id="div">
+                        <h1>Headline</h1>
+                        <h4>Subheadline</h4>
+                    </div>
+                    <div id="div">
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                            only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                            Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                            including versions of Lorem Ipsum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- index page is the structure that is three columns named left, middle, and right -->
