@@ -26,41 +26,50 @@
     <nav>
         <ol>
         <li><a href="index.html">Top Page</a></li>
-        <li><a href="page1.html">page 1</a></li>
+        <li><a href="page1.html">Things to Do</a></li>
         <li><a class="ticketButton" href="ticket.html">Ticket</a></li>
         </ol>
     </nav>
 
     <!-- Sub-page 1: Things to do -->
     <main id='main-content'>
-        <!-- Main Headlines -->
-        <h1>Headline</h1>
-        <P>Description</P>
-        <!-- Carousel Media -->
-        <div class='carousel-container'>
-            <section class=”carousel-media”>
-                <!-- Repeat semantic below for next media item -->
-                <article class=”media-1”>
-                    <figure>
-                        <img src="img/disneyland_hotel.jpg" alt=''>
-                    </figure>
-                </article>
-            <!-- End of Carousel Media-->
-            </section>
+        <!-- hero image -->
+        <div class='hero-image'>
+            <div class='hero-text'>
+                <h1>Things to Do</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="ticket.html"><button>Buy Tickets Now</button></a>
+            </div>
         </div>
+        
         
         <!-- start cat 1-->
         <article class="rides-attractions">
-            <h2>Rides & Attractions </h2>
-            <p>description</p>
-            <!-- repeat semantic below for next ride/attraction -->
-            <section class="ferris-wheel">
+            <div class='section-container'>
+                <div class='section-head-container'>
+                    <h1>Rides & Attractions</h1>
+                    <h4>Subheadline</h4>
+                </div>
+                <div class='section-desc-container'>
+                    <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum</p>
+                </div>
+            </div>
+                <!-- repeat semantic below for next ride/attraction -->
+            <section class="item-container ferris-wheel">
                 <div class='grid-container'>
                     <div class='item-title'>
                         <h3>The Ferris Wheel</h3>
                     </div>
                     <div class='item-desc'>
-                        <p> description </p>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. </p>
                     </div>
                     <div class='item-img'>
                         <figure>
@@ -69,25 +78,110 @@
                     </div>
                 </div>
             </section>
+            <section class="item-container bumper-cars">
+                <div class='grid-container'>
+                    <div class='item-title'>
+                        <h3>Bumper Cars</h3>
+                    </div>
+                    <div class='item-desc'>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    <div class='item-img'>
+                        <figure>
+                            <img src="img/bumpercars.jpeg" style="max-width:300px;" alt=''>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="item-container merry-go-round">
+                <div class='grid-container'>
+                    <div class='item-title'>
+                        <h3>Merry Go Round</h3>
+                    </div>
+                    <div class='item-desc'>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    <div class='item-img'>
+                        <figure>
+                            <img src="img/merrygoround.jpg" style="max-width:300px;" alt=''>
+                        </figure>
+                    </div>
+                </div>
+            </section>
         <!-- end of cat 1-->
         </article>
 
         <!-- start cat 2-->
-        <article class=”events-and-shows”> 
-            <h2>Events & Shows</h2>
-            <p>description</p>
+        <article class=”events-and-shows”>
+            <div class='section-container'>
+                <div class='section-head-container'>
+                    <h1>Events & Shows</h1>
+                    <h4>Subheadline</h4>
+                </div>
+                <div class='section-desc-container'>
+                    <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                    including versions of Lorem Ipsum</p>
+                </div>
+            </div>
             <!-- repeat semantic below for next events/shows -->
-            <section class="holiday-season">
+            <section class="item-container holiday-season">
                 <div class='grid-container'>
                     <div class='item-title'>
                         <h3>Joy of holiday season</h3>
                     </div>
                     <div class='item-desc'>
-                        <p>description</p>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                     <div class='item-img'>
                         <figure>
                             <img src="img/holiday.jpeg" style="max-width:300px;" alt=''>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- repeat semantic below for next events/shows -->
+            <section class="item-container knotts-show">
+                <div class='grid-container'>
+                    <div class='item-title'>
+                        <h3>Bear-y tales show</h3>
+                    </div>
+                    <div class='item-desc'>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class='item-img'>
+                        <figure>
+                            <img src="img/knottsshow.jpg" style="max-width:300px;" alt=''>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- repeat semantic below for next events/shows -->
+            <section class="item-container pokemon-master">
+                <div class='grid-container'>
+                    <div class='item-title'>
+                        <h3>Become a Pokémon master</h3>
+                    </div>
+                    <div class='item-desc'>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class='item-img'>
+                        <figure>
+                            <img src="img/pokemon-masters.png" style="max-width:300px;" alt=''>
                         </figure>
                     </div>
                 </div>
@@ -97,20 +191,71 @@
 
         <!-- start cat 3-->
         <article class="dining">
-            <h2>Dining</h2>
-            <p>description</p>
+            <div class='section-container'>
+                <div class='section-head-container'>
+                    <h1>Dining</h1>
+                    <h4>Subheadline</h4>
+                </div>
+                <div class='section-desc-container'>
+                    <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                    including versions of Lorem Ipsum</p>
+                </div>
+            </div>
             <!-- repeat semantic below for next restaurant -->
-            <section class="three-broomsticks-restuarant">
+            <section class="item-container rest-wa">
                 <div class='grid-container'>
                     <div class='item-title'>
-                        <h3>Three Broomsticks restaurant</h3>
+                        <h3>Japanese restaurant Wa</h3>
                     </div>
                     <div class='item-desc'>
-                        <p>description</p>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. </p>
                     </div>
                     <div class='item-img'>
                         <figure>
-                            <img src="img/broomstick-rest.jpg" style="max-width:300px;" alt=''>
+                            <img src="img/wa-rest.jpg" style="max-width:300px;" alt=''>
+                        </figure>
+                    </div> 
+                </div>
+            </section>
+            <!-- repeat semantic below for next restaurant -->
+            <section class="item-container mc-donalds">
+                <div class='grid-container'>
+                    <div class='item-title'>
+                        <h3>Mc Donalds</h3>
+                    </div>
+                    <div class='item-desc'>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    <div class='item-img'>
+                        <figure>
+                            <img src="img/mcdonalds.jpg" style="max-width:350px;" alt=''>
+                        </figure>
+                    </div> 
+                </div>
+            </section>
+            <!-- repeat semantic below for next restaurant -->
+            <section class="item-container starbucks">
+                <div class='grid-container'>
+                    <div class='item-title'>
+                        <h3>Starbucks</h3>
+                    </div>
+                    <div class='item-desc'>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    <div class='item-img'>
+                        <figure>
+                            <img src="img/starbucks.jpg" style="max-width:300px;" alt=''>
                         </figure>
                     </div> 
                 </div>
