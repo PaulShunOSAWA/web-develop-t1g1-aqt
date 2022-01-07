@@ -318,8 +318,8 @@ footer ul
     border-radius: 12px;
     background-color: #009a91;
   }
-  
-  .button {
+
+button {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -334,6 +334,7 @@ footer ul
     font-size: 17px;
     font-weight: 700;
     text-decoration: none;
+    border: none;
   }
   
   .card-container {
