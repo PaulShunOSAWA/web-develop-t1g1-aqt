@@ -1,0 +1,169 @@
+<!--
+
+All images I drew are just for sample
+I just coded all three pages roughly for sample in order to see the great framework Louis gave us
+Of course, I do not mean that we must use this HTML for our Team assignment
+(Shun OSAWA)
+
+TO DO 
+・Shun is to code all three pages, CSS,  roughly--DONE
+・Shun is to give a grid structure and put a header and a footer on all three pages--DONE
+・Shun is to code the whole index.html__DONE
+・Louis is to code the whole page1.html__DONE
+・Ahalid is to code the whole ticket.html__DONE
+・Api edits ticket.html__DONE Dec 30, 2021
+・Api updates html wireframe for ticket page__DONE Dec 30, 2021
+・make the Q&A collapsible button__Api DONE on Jan 22, 2022.
+・Replace sample images with colorful images
+・All three pages' look are completed
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>our theme parks</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a website for a community of people interested in reading books for discussion and sharing.">
+    <meta name="author" content="web-develop-t1g1-aqt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="120">
+    <meta name="keywords" content="???'">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+    <link rel="stylesheet" href="StyleSheet/style.css">
+</head>
+
+<body class = "mainPage">
+    
+    <header>
+        <a href="index.html">
+            <img src="img/theme-park-logo.jpg" alt="Theme Park logo image" width="236" height="136">
+        </a>    
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="page1.html">Things to Do</a></li>
+            <li><a class="ticketButton" href="ticket.html">Ticket</a></li>
+        </ol>
+    </nav>
+    
+    <div id = "mainAd">
+        <div class="section_index_hero">
+        <div class="container">
+            <div class="fadeIn">
+                <h1 class="indexHeading">Get Unlimited Visits All Season with a Platinum Package - Only $24!</h1>
+                <h4 class="indexHeading">Don't want to wait in line? Get the Fastlane pass for all rides and attactions - no more lineup!</h4>
+            </div>    
+        </div>
+        </div>
+    </div>
+    <div id = "review" class = "reviewComment">
+        <div class="section">
+            <div class="container w-container">
+                <div class="w-layout-grid grid">
+                    <div id="div">
+                        <h1 class="fadeIn">Who else has had enough of being stuck at home?</h1>
+                        <h4 class="fadeIn">Come to our Theme Park and safely enjoy all our rides and attractions!</h4>
+                    </div>
+                    <div id="div">
+                        <p class="fadeIn"><strong>Look.</strong> Plan your vacation at our newly upgraded 123,100 sq ft. theme park. We've invested $103,243,200 USD and revamped our park just for you! New rides. New attractions. New dining. Scroll down to find out how you can have a spectacular time with your friends and family today! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- index page is the structure that is three columns named left, middle, and right -->
+    <aside id = "leftCard">
+        <a href="page1.html"><img src="img/rideAtt.jpg" alt="Rides & Attractions image" width="410" height="232"></a>
+            <div class="fadeIn">
+                <h1 class = "cardHeding">Rides & Attractions</h1>
+                <p class = "cardText">Work up your courage! And find out why thousands of others are lining up for our new rides and attractions.
+                </p>
+            </div>    
+    </aside>
+
+    <div id = "middleCard">
+        <a href="page1.html"><img src="img/dining.jpg" alt="Dining image" width="410" height="232"></a>
+            <div class="fadeIn">
+                <h1 class = "cardHeding">Dining</h1>
+                <p class = "cardText">Hungry? Our exclusive partnership with world-class chefs will take you on an unforgettable gastronomic experience.
+                </p>
+            </div>    
+    </div>
+
+    <aside id = "rightCard">
+        <a href="page1.html"><img src="img/holidayAtThePark.jpg" alt="Events & Shows image" width="410" height="232"></a>
+            <div class="fadeIn">
+                <h1 class = "cardHeding">Events & Shows</h1>
+                <p class = "cardText">From greatest storytellers to explosive shows, there's an adventure for everyone.
+                </p>
+            </div>    
+    </aside>
+
+    <div id = "faq">
+        
+        <h2>FAQ.</h2>
+        <details>
+            <summary>Lost & Found</summary>
+            <dl>
+                <dt>Q: Did you misplace or lose any of your items?</dt>
+                <dd>- A: Please call 1-800-423-4324 or go to our front desk to report a case.</dd>
+            </dl>
+        </details>
+       
+        <details>
+            <summary>Pre-arrival tips</summary>
+            <dl>
+                <dt>Q: How much does it costs to park?</dt>
+                <dd>- A: Parking costs $25 usd/day.</dd>
+                <dt>Q: Does the park open on National Holidays?</dt>
+                <dd>- A: Park opens for the whole year, however holiday hours may vary.</dd>
+                <dt>Q: Are masks required during Covid-19 pandemic?</dt>
+                <dd>- A: Masks are required until further notice.</dd>
+                <dt>Q: Are pets allowed in the park?</dt>
+                <dd>- A: Pets are not allowed in the park, except service animals.</dd>
+                <dt>Q: Are there accesible for wheelchair?</dt>
+                <dd>- A: Please rest assured that our park listed in Wheelchair Accessible Theme Parks ranking 2021.</dd>
+            </dl>
+        </details>
+       
+        <details>
+            <summary>Access to money</summary>
+            <dl>
+                <dt>Q: Do you need access to money?</dt>
+                <dd>- A: All our facilities now operate cashless! We only accept debit, credit, Google Pay, Apple Pay and Alipay.</dd>
+            </dl>
+        </details>
+
+        <details>
+            <summary>Medical help</summary>
+            <dl>
+                <dt>Q: Have you sustained an injury on our park grounds?</dt>
+                <dd>- A: For emergencies, please call at 1-800-777-MEDIC or visit our medical center beside the front gates. Our trained medics are available during operational hours.</dd>
+            </dl>
+        </details>
+
+        <details>
+            <summary>Covid protocols</summary>
+            <dl>
+                <dt>Q: What are the protocols for covid?</dt>
+                <dd>- A: Proof of Covid vaccination and masks are required for entry.</dd>
+            </dl>
+        </details>
+    </div>
+
+    <footer>
+        <ul>
+            <li>Our theme park</li>
+            <br>
+            <li id = "contact">Contact us: Office: Unit 101</li>
+            <li id = "contact">Email: park@theme.com</li>
+            <li id = "contact">Phone: (888)-888-888</li>
+            <li id = "contact">Fax: (888)-888-8800</li>         
+        </ul>
+    </footer> 
+</body>
